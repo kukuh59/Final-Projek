@@ -1,0 +1,45 @@
+{% extends 'base_layout.html' %}
+
+{% block konten %}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ionicons.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dataTables.bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/AdminLTE.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='font/sansPro.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}">
+    <div class="container">
+
+        <form action="{{ url_for('booking', kamar=kamar) }}" method="post">
+            <div class="form-group">
+                <label>No KTP</label>
+                <input type="text" name="no_ktp" class="form-control" placeholder="Nomor KTP">
+            </div>
+            <div class="form-group">
+                <label>Nama Lengkap</label>
+                <input type="text" name="nama" class="form-control" placeholder="Nama Lengkap">
+            </div>
+            <div class="form-group">
+                <label>Jenis Kelamin</label><br>
+                <input type="radio" value='L' name="jenis_kelamin">Laki Laki <br>
+                <input type="radio" value='P' name="jenis_kelamin">Perempuan
+            </div>
+            <div class="form-group">
+                <label>No HP</label>
+                <input type="text" name="no_hp" class="form-control" placeholder="Nomor Handphone">
+            </div>
+            <div class="form-group">
+                <label>Asal</label>
+                <input type="text" name="kota_asal" class="form-control" placeholder="Asal">
+            </div>
+            <div class="box-footer">
+                <button type="reset" class="btn btn-default">Cancel</button>
+                <button type="submit" class="btn btn-primary pull-right">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+{% endblock %}
