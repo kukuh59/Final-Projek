@@ -1,6 +1,7 @@
 # Final-Projek(KELOMPOK 9)
 Menggabungkan database dan web nya dengan flask/django
 <hr>
-<h1> Kukuh Putra H(Ketua) </h1>
-<h1>Nabbilla Fatmah(Anggota </h1>
-<h1>Taufikkurahman(Anggota) </h1>
+TEMA:IN DE KOST(kost-kost'an)
+<h2>Kukuh Putra H(Ketua)</h2>
+<h2>Nabbilla Fatmah(Anggota)</h2>
+<h2>Taufikkurahman(Anggota)</h2>
